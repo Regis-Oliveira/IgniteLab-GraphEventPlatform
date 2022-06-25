@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        blur: 'url(/src/assets/blur-background.png)',
+      },
       fontFamily: {
         sans: 'Roboto, sans-serif',
       },
@@ -27,6 +30,7 @@ module.exports = {
           100: '#E1E1E6',
           200: '#C4C4CC',
           300: '#8D8D99',
+          400: '#4d4d57',
           500: '#323238',
           600: '#29292E',
           700: '#121214',
@@ -35,5 +39,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
